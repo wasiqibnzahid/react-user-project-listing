@@ -71,7 +71,7 @@ const User = () => {
         </div>
 
         <div className="absolute w-48 border-2 -bottom-24 -translate-x-1/2 left-1/2 rounded-full ">
-          <img className="rounded-full" src={dp} alt="display picture" />
+          <img className="rounded-full" src={dp} alt="User Profile" />
 
           <span className="absolute bg-black text-white -translate-x-1/2 left-1/2 -bottom-5 w-24 text-center  py-3 rounded-full">
             701 XP

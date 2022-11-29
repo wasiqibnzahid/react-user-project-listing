@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,16 +11,22 @@ const Header = () => {
               Luke Bennett
             </span>
           </div>
-
-          <div className="flex items-center">
+          <div className="flex mr-auto items-center">
+            <Link to="/projects">
+              <div className="cursor-pointer mx-2">Projects</div>
+            </Link>
+            <Link to="/">
+              <div className="cursor-pointer mx-2">Profile</div>
+            </Link>
+          </div>
+          <div className="w-[30%] min-w-[150px] max-w-[300px]">
             <input
               type="search"
-              className="rounded-3xl border-2 p-3 bg-gray-120 focus:bg-black"
+              className="rounded-3xl w-full border-2 p-3 bg-gray-120 focus:bg-black"
               placeholder="Search 399+ projects here..."
             />
-            <div className="cursor-pointer mx-2">Projects</div>
-            <div className="cursor-pointer mx-2">Profile</div>
           </div>
+     
         </div>
       </nav>
     </>
